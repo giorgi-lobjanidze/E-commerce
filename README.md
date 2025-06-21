@@ -1,2 +1,2 @@
 # E-commerce
-e-commerce project with working cart
+e-commerce საიტი, მოქმედი ფუნქციონალით, კალათაზე მოქმედებით
