@@ -1,0 +1,62 @@
+[
+  {
+    "img": "../images/e-com15.webp",
+    "header": "Casual Rubber",
+    "price": "$186.00 <a role=\"link\" aria-disabled=\"true\" style=\"text-decoration: line-through; color: grey;\">$203.00</a>"
+  },
+  {
+    "img": "../images/e-com18.webp",
+    "header": "Chronograph Leather",
+    "price": "$180.00 <a role=\"link\" aria-disabled=\"true\" style=\"text-decoration: line-through; color: grey;\">$198.00</a>"
+  },
+  {
+    "img": "../images/e-com41.webp",
+    "header": "Fashion Mesh",
+    "price": "$210.00 <a role=\"link\" aria-disabled=\"true\" style=\"text-decoration: line-through; color: grey;\">$235.00</a>"
+  },
+  {
+    "img": "../images/e-com42.webp",
+    "header": "Luxury Automatic",
+    "price": "$150.00 <a role=\"link\" aria-disabled=\"true\" style=\"text-decoration: line-through; color: grey;\">$188.00</a>"
+  },
+  {
+    "img": "../images/e-com14.webp",
+    "header": "Premium Gold",
+    "price": "$255.00 <a role=\"link\" aria-disabled=\"true\" style=\"text-decoration: line-through; color: grey;\">$289.00</a>"
+  },
+  {
+    "img": "../images/e-com21.webp",
+    "header": "Slim Minimalist",
+    "price": "$267.00 <a role=\"link\" aria-disabled=\"true\" style=\"text-decoration: line-through; color: grey;\">$298.00</a>"
+  },
+  {
+    "img": "../images/e-com19.webp",
+    "header": "Smart Tracker",
+    "price": "$240.00 <a role=\"link\" aria-disabled=\"true\" style=\"text-decoration: line-through; color: grey;\">$275.00</a>"
+  },
+  {
+    "img": "../images/e-com17.webp",
+    "header": "Sports Dive",
+    "price": "$190.00 <a role=\"link\" aria-disabled=\"true\" style=\"text-decoration: line-through; color: grey;\">$220.00</a>"
+  },
+  {
+    "img": "../images/e-com16.webp",
+    "header": "Stylish Analog",
+    "price": "$166.00 <a role=\"link\" aria-disabled=\"true\" style=\"text-decoration: line-through; color: grey;\">$188.00</a>"
+  },
+  {
+    "img": "../images/e-com20.webp",
+    "header": "Titanium Steel",
+    "price": "$240.00 <a role=\"link\" aria-disabled=\"true\" style=\"text-decoration: line-through; color: grey;\">$260.00</a>"
+  },
+  {
+    "img": "../images/e-com13.webp",
+    "header": "Vintage Quartz",
+    "price": "$203.00 <a role=\"link\" aria-disabled=\"true\" style=\"text-decoration: line-through; color: grey;\">$262.00</a>"
+  },
+  {
+    "img": "../images/e-com43.webp",
+    "header": "Vintage Inspired",
+    "price": "$190.00 <a role=\"link\" aria-disabled=\"true\" style=\"text-decoration: line-through; color: grey;\">$220.00</a>"
+  }
+]

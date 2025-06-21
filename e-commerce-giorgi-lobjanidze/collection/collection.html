@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Time House</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/config.css">
+    <link rel="stylesheet" href="../styles/style.css">
+  </head>
+  <body>
+    <div class="container-fluid top-bar w-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="row">
+                        <p class="text-light top-bar-help mt-2 fw-bold">Need Help?</p>
+                    </div>
+                    <div class="row">
+                        <p class="text-light top-bar-number">+001 123 456 789</p>
+                    </div>
+                </div>
+                <div class="col-4 top-bar-logo"><a href="#"><img src="../images/e-com1.webp" alt="" class="w-100 h-100"></a></div>
+                <div class="col-4">
+                    <div class="row">
+                        <a href="../cart/cart.html" style="width: 35px; height: 30px; margin-top: 33px; transform: translateX(210px);z-index: 100;"><div class="col-3 top-bar-cart-container"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                          </svg><span class="cart-item-count text-center" style="left: 6px;"></span></div></a>
+                        <div class="col-9">
+                            <div class="row top-bar-language">
+                                <div class="col-3"><img src="../images/e-com2.webp" alt="" class="top-bar-flag w-75 h-75"></div>
+                                <div class="col-9"><p class="text-light fs-5">English</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ! top bar end -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active fs-5" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fs-5" aria-current="page" href="../about/about.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Product
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../products/shop.html">Shop</a></li>
+                  <li><a class="dropdown-item" href="./collection.html">Collection</a></li>
+                  <li><a class="dropdown-item" href="../inspect/inspect.html">Product Detail</a></li>
+                  <li><a class="dropdown-item" href="../cart/cart.html">Cart</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Blog
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../blog-listing/blog-list.html">Blog Listing</a></li>
+                  <li><a class="dropdown-item" href="../blog-detail/blog-detail.html">Blog Detail</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fs-5" aria-current="page" href="../contact/contact.html">Contact Us</a>
+              </li>
+
+            </ul>
+            <a class="nav-cart-icon dissapear" href="../cart/cart.html" style="width: 30px; height: 30px;transform: translateX(-10px); z-index: 100;"><div class="col-3 top-bar-cart-container"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16" style=" color: black; transform: translateX(13px);">
+            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+            </svg><span class="cart-item-count text-center"></span></div></a>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search for products..." aria-label="Search">
+              <button class="btn btn-outline-dark" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+              </svg></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- ! nav end -->
+
+      <div class="about-us-banner container-fluid mt-5">
+        <div class="container">
+            <h1 class="about-banner-header text-uppercase text-light">Shop</h1>
+        </div>
+      </div>
+
+      <!-- ! about banner end -->
+
+      <div class="container suggested-container" style="margin-top: 6rem;">
+        <div class="row suggested-row">
+          <div class="col-1 suggested-col">
+            <div class="suggested-img-container">
+              <a href="../products/shop.html"><img src="../images/e-com6.avif" alt="" class="suggested-img collection-img"></a>
+            </div>
+            <a href="../products/shop.html"><p class="suggested-header mt-2">Luxury Watches</p></a>
+          </div>
+          <div class="col-1 suggested-col">
+            <div class="suggested-img-container">
+              <a href="../products/shop.html"><img src="../images/e-com7.avif" alt="" class="suggested-img collection-img"></a>
+            </div>
+            <a href="../products/shop.html"><p class=" suggested-header mt-2">Vintage Inspired</p></a>
+          </div>
+          <div class="col-1 suggested-col">
+            <div class="suggested-img-container">
+              <a href="../products/shop.html"><img src="../images/e-com8.avif" alt="" class="suggested-img collection-img"></a>
+            </div>
+            <a href="../products/shop.html"><p class="suggested-header mt-2">Men's Watches</p></a>
+          </div>
+          <div class="col-1 suggested-col">
+            <div class="suggested-img-container">
+              <a href="../products/shop.html"><img src="../images/e-com9.avif" alt="" class="suggested-img collection-img"></a>
+            </div>
+            <a href="../products/shop.html"><p class="suggested-header mt-2">Unisex Designs</p></a>
+          </div>
+          <div class="col-1 suggested-col">
+            <div class="suggested-img-container">
+              <a href="../products/shop.html"><img src="../images/e-com10.avif" alt="" class="suggested-img collection-img"></a>
+            </div>
+            <a href="../products/shop.html"><p class="suggested-header mt-2">Digital Watches</p></a>
+          </div>
+          <div class="col-1 suggested-col">
+            <div class="suggested-img-container">
+              <a href="../products/shop.html"><img src="../images/e-com11.avif" alt="" class="suggested-img collection-img"></a>
+            </div>
+            <a href="../products/shop.html"><p class="suggested-header mt-2">Kids Watches</p></a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+        
+
+      
+
+
+     
+
+
+<!-- ! footer start -->
+
+        <div class="footer-container container-fluid" style="margin-top:50px;">
+          <div class="container">
+            <div class="row">
+              <div class="col-4">
+                <div class="row">
+                  <img src="../images/e-com33.webp" alt="" class="w-50">
+                </div>
+                <p class="text-secondary fs-5" style=" margin-top: 2%;">Lorem ipsum dolor sit amet consectetur. Amet ut viverra morbi in venenatis augue turpis. Quisque at leo amet urna volutpat ac.</p> <br>
+
+                <p class="text-secondary" style="font-size: 18px;">Email: <a class="text-dark" role="link" aria-disabled="true" >exampleinfo@gmail.com</a></p>
+                <p class="text-secondary" style="font-size: 18px; margin-top: -3%;">Phone: <a class="text-dark" role="link" aria-disabled="true" >+222-1800-2628</a></p>
+                <p class="text-secondary" style="font-size: 18px; margin-top: -3%;">Address: <a class="text-dark" role="link" aria-disabled="true" >502 New Design Str, Melbourne</a></p> <br>
+
+                <p class="text-secondary" style="text-wrap: nowrap;">Copyright © <strong class="text-dark">TIMEHOUSE.</strong> All Rights Reserved. Powered by <strong class="text-dark">UIPARADOX.</strong></p>
+                
+              </div>
+              <div class="col-2 ms-1">
+                <h3>Company</h3>
+                <a class="text-secondary fs-5" href="../index.html">Home</a> <br>
+                <a class="text-secondary fs-5" href="../about/about.html">About Us</a> <br>
+                <a class="text-secondary fs-5" href="../products/shop.html">Our Store</a> <br>
+                <a class="text-secondary fs-5" href="../contact/contact.html">Contact Us</a> <br>
+                <a class="text-secondary fs-5" href="#">My Account</a>
+              </div>
+              <div class="col-2 ms-1">
+                <h3>Resources</h3>
+                <a class="text-secondary fs-5" href="../products/shop.html">Shop</a> <br>
+                <a class="text-secondary fs-5" href="../collection/collection.html">Collections</a> <br>
+                <a class="text-secondary fs-5" href="../blog-listing/blog-list.html">Blogs</a> <br>
+                <a class="text-secondary fs-5" href="#">Theme FAQs</a> <br>
+                <a class="text-secondary fs-5" href="#">Privacy Policy</a>
+              </div>
+              <div class="col-3">
+                <h3>Sign Up To Newsletter</h3>
+                <p class="text-secondary fs-5">Sign up for exclusive updates, new arrivals & insider only discounts</p>
+                <div class="mb-3">
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Email Adress...">
+                  <button class="footer-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                    <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+                  </svg></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ! footer end -->
+      
+
+
+
+
+
+
+
+
+
+    <script src="../scripts/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

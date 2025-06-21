@@ -1,0 +1,26 @@
+[
+  {
+    "img": "../images/e-com53.avif",
+    "header": "Paris, France",
+    "location": "45 Rue de Rivoli, 75001 Paris",
+    "number": "+33 1 42 65 00 55"
+  },
+  {
+    "img": "../images/e-com54.avif",
+    "header": "New York City, USA",
+    "location": "123 Fifth Avenue, New York, NY 10011",
+    "number": "+1 (212) 555-0190"
+  },
+  {
+    "img": "../images/e-com55.avif",
+    "header": "Madrid, Spain",
+    "location": "Calle de Serrano, 112, 28006 Madrid",
+    "number": "+34 91 555 1234"
+  },
+  {
+    "img": "../images/e-com56.avif",
+    "header": "Madrid, Spain",
+    "location": "Calle de Serrano, 112, 28006 Madrid",
+    "number": "+34 91 555 1234"
+  }
+]

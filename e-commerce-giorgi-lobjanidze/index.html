@@ -1,0 +1,779 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Time House</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/config.css">
+    <link rel="stylesheet" href="./styles/style.css">
+  </head>
+  <body>
+    <div class="container-fluid top-bar w-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="row">
+                        <p class="text-light top-bar-help mt-2 fw-bold">Need Help?</p>
+                    </div>
+                    <div class="row">
+                        <p class="text-light top-bar-number">+001 123 456 789</p>
+                    </div>
+                </div>
+                <div class="col-4 top-bar-logo"><a href="#"><img src="./images/e-com1.webp" alt="" class="w-100 h-100"></a></div>
+                <div class="col-4">
+                    <div class="row">
+                        <a href="./cart/cart.html" style="width: 35px; height: 30px; margin-top: 33px; transform: translateX(210px);z-index: 100;"><div class="col-3 top-bar-cart-container"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                          </svg><span class="cart-item-count text-center" style="left: 6px;"></span></div></a>
+                        <div class="col-9">
+                            <div class="row top-bar-language">
+                                <div class="col-3"><img src="./images/e-com2.webp" alt="" class="top-bar-flag w-75 h-75"></div>
+                                <div class="col-9"><p class="text-light fs-5">English</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ! top bar end -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active fs-5" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fs-5" aria-current="page" href="./about/about.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Product
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./products/shop.html">Shop</a></li>
+                  <li><a class="dropdown-item" href="./collection/collection.html">Collection</a></li>
+                  <li><a class="dropdown-item" href="./inspect/inspect.html">Product Detail</a></li>
+                  <li><a class="dropdown-item" href="./cart/cart.html">Cart</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Blog
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./blog-listing/blog-list.html">Blog Listing</a></li>
+                  <li><a class="dropdown-item" href="./blog-detail/blog-detail.html">Blog Detail</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fs-5" aria-current="page" href="./contact/contact.html">Contact Us</a>
+              </li>
+
+            </ul>
+
+            <a class="nav-cart-icon dissapear" href="./cart/cart.html" style="width: 30px; height: 30px;transform: translateX(-10px); z-index: 100;"><div class="col-3 top-bar-cart-container"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16" style=" color: black; transform: translateX(13px);">
+            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+            </svg><span class="cart-item-count text-center"></span></div></a>
+
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search for products..." aria-label="Search">
+              <button class="btn btn-outline-dark" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+              </svg></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- ! nav end -->
+
+
+      <div class="container hero-section-container mt-5">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <h6 class="text-secondary hero-mini-header">LIMITED EDITION PARIS</h6>
+                <h1 class="fw-bold hero-header">PRECISION <br> IN TIME.</h1>
+                <img src="./images/e-com4.webp" class="d-block m-auto hero-carousel-img">
+              </div>
+              <div class="carousel-item">
+                <h6 class="text-secondary hero-mini-header hero-same-header">LIMITED EDITION PARIS</h6>
+                <h1 class="fw-bold hero-header hero-same-header">PRECISION <br> IN TIME.</h1>
+                <img src="./images/e-com5.webp" class="d-block m-auto hero-carousel-img">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon carousel-control-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon carousel-control-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </div>
+
+      <!-- ! hero end -->
+
+      <div class="container-fluid inf-carousel-conatiner mt-5 mb-5">
+        <div class="carousel-part mb-5">
+          <div class="carousel-container">
+            <img src="./images/e-com12.png" alt="" class="carousel-part-img">
+            <p class="carousel-part-text text-light">Enjoy an Instant 20% Off on All Items!</p>
+          </div>
+          <div class="carousel-container">
+            <img src="./images/e-com12.png" alt="" class="carousel-part-img">
+            <p class="carousel-part-text text-light">Enjoy an Instant 20% Off on All Items!</p>
+          </div>
+          <div class="carousel-container">
+            <img src="./images/e-com12.png" alt="" class="carousel-part-img">
+            <p class="carousel-part-text text-light">Enjoy an Instant 20% Off on All Items!</p>
+          </div>
+          <div class="carousel-container">
+            <img src="./images/e-com12.png" alt="" class="carousel-part-img">
+            <p class="carousel-part-text text-light">Enjoy an Instant 20% Off on All Items!</p>
+          </div>
+          <div class="carousel-container">
+            <img src="./images/e-com12.png" alt="" class="carousel-part-img">
+            <p class="carousel-part-text text-light">Enjoy an Instant 20% Off on All Items!</p>
+          </div>
+          <div class="carousel-container">
+            <img src="./images/e-com12.png" alt="" class="carousel-part-img">
+            <p class="carousel-part-text text-light">Enjoy an Instant 20% Off on All Items!</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ! advert end -->
+
+      <div class="container suggested-container mt-5 mb-5">
+        <div class="row suggested-row">
+          <div class="col-1 col-md-2 suggested-col">
+            <div class="suggested-img-container">
+              <a href="./products/shop.html"><img src="./images/e-com6.avif" alt="" class="suggested-img"></a>
+            </div>
+            <a href="./products/shop.html"><p class="suggested-header mt-2">Luxury Watches</p></a>
+          </div>
+          <div class="col-1 col-md-2 suggested-col">
+            <div class="suggested-img-container">
+              <a href="./products/shop.html"><img src="./images/e-com7.avif" alt="" class="suggested-img"></a>
+            </div>
+            <a href="./products/shop.html"><p class=" suggested-header mt-2">Vintage Inspired</p></a>
+          </div>
+          <div class="col-1 col-md-2 suggested-col">
+            <div class="suggested-img-container">
+              <a href="./products/shop.html"><img src="./images/e-com8.avif" alt="" class="suggested-img"></a>
+            </div>
+            <a href="./products/shop.html"><p class="suggested-header mt-2">Men's Watches</p></a>
+          </div>
+          <div class="col-1 col-md-2 suggested-col">
+            <div class="suggested-img-container">
+              <a href="./products/shop.html"><img src="./images/e-com9.avif" alt="" class="suggested-img"></a>
+            </div>
+            <a href="./products/shop.html"><p class="suggested-header mt-2">Unisex Designs</p></a>
+          </div>
+          <div class="col-1 col-md-2 suggested-col">
+            <div class="suggested-img-container">
+              <a href="./products/shop.html"><img src="./images/e-com10.avif" alt="" class="suggested-img"></a>
+            </div>
+            <a href="./products/shop.html"><p class="suggested-header mt-2">Digital Watches</p></a>
+          </div>
+          <div class="col-1 col-md-2 suggested-col">
+            <div class="suggested-img-container">
+              <a href="./products/shop.html"><img src="./images/e-com11.avif" alt="" class="suggested-img"></a>
+            </div>
+            <a href="./products/shop.html"><p class="suggested-header mt-2">Kids Watches</p></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ! suggested end -->
+
+      <div class="container featured-container">
+        <div class="row">
+          <h1 class="featured-header text-uppercase text-center">Featured products</h1>
+          <p class="text-center text-secondary fs-5">Porta non pulvinar neque laoreet suspendisse interdum consectetur libero. <br>
+            Massa tempor nec feugiat nisl.</p>
+        </div>
+
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-3">
+                  <div class="featured-card">
+                    <div class="row featured-img-container" style="width: 20rem;">
+                      <a href="./inspect/inspect.html"><img src="./images/e-com13.webp" class="w-100 featured-img"></a>
+                    </div>
+                    <div class="row" style="width: 20rem;">
+                      <a href="./inspect/inspect.html"><h4 class="text-center">Vintage Quartz</h4></a>
+                      <p class="featured-new-price text-center fs-4">$203.00 <a role="link" aria-disabled="true" style="text-decoration: line-through; color: grey;">$262.00</a></p>
+                      <a href="./inspect/inspect.html"><button class="featured-button text-center mx-5">Select Options</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="featured-card">
+                    <div class="row featured-img-container" style="width: 20rem;">
+                      <a href="./inspect/inspect3.html"><img src="./images/e-com14.webp" class="w-100 featured-img"></a>
+                    </div>
+                    <div class="row" style="width: 20rem;">
+                      <a href="./inspect/inspect3.html"><h4 class="text-center">Premium Gold</h4></a>
+                      <p class="featured-new-price text-center fs-4">$255.00 <a role="link" aria-disabled="true" style="text-decoration: line-through; color: grey;">$289.00</a></p>
+                      <a href="./inspect/inspect3.html"><button class="featured-button text-center mx-5">Select Options</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="featured-card">
+                    <div class="row featured-img-container" style="width: 20rem;">
+                      <a href="./inspect/inspect.html"><img src="./images/e-com15.webp" class="w-100 featured-img"></a>
+                    </div>
+                    <div class="row" style="width: 20rem;">
+                      <a href="./inspect/inspect.html"><h4 class="text-center">Casual Rubber</h4></a>
+                      <p class="featured-new-price text-center fs-4">$186.00 <a role="link" aria-disabled="true" style="text-decoration: line-through; color: grey;">$203.00</a></p>
+                      <a href="./inspect/inspect.html"><button class="featured-button text-center mx-5">Select Options</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="featured-card">
+                    <div class="row featured-img-container" style="width: 20rem;">
+                      <a href="./inspect/inspect3.html"><img src="./images/e-com16.webp" class="w-100 featured-img"></a>
+                    </div>
+                    <div class="row" style="width: 20rem;">
+                      <a href="./inspect/inspect3.html"><h4 class="text-center">Titanium Steel</h4></a>
+                      <p class="featured-new-price text-center fs-4">$240.00 <a role="link" aria-disabled="true" style="text-decoration: line-through; color: grey;">$260.00</a></p>
+                      <a href="./inspect/inspect3.html"><button class="featured-button text-center mx-5">Select Options</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <a href="./products/shop.html"><button class="featured-button text-center mt-5 text-center" style="margin-left: 45%;" >View All Products</button></a>
+
+        <!-- ! featured end -->
+
+        <div class="watch-description-container container mt-5">
+          <div class="row" style="gap: 0px;">
+            <div class="col-6 watch-desc" style="background-color: rgb(248, 244, 240); transform: translateX(-8px);">
+              <div class="row">
+                <div class="col-6 pt-4">
+                <h2>Water-Resistant <br>
+                  Watches</h2>
+                <p class="text-secondary">Porta non pulvinar neque laoreet <br> suspendisse interdum consectetur <br> libero. Massa tempor nec feugiat nisl.</p>
+                <a href="./products/shop.html"><button class="featured-button text-center mt-3" style="width: 8rem;">Shop Now</button></a>
+              </div>
+              <div class="col-6">
+                <img src="./images/e-com5.webp" alt="" class="w-75 h-100" style="transform: translateX(40%);">
+              </div>
+              </div>
+            </div>
+
+
+            <div class="col-6 watch-desc" style="background-color: rgb(248, 244, 240); transform: translateX(8px);">
+              <div class="row">
+                <div class="col-6 pt-4">
+                <h2>Ceramic & Unique <br>
+                  Materials</h2>
+                <p class="text-secondary">Porta non pulvinar neque laoreet <br> suspendisse interdum consectetur <br> libero. Massa tempor nec feugiat nisl.</p>
+                <a href="./products/shop.html"><button class="featured-button text-center mt-3" style="width: 8rem;">Shop Now</button></a>
+              </div>
+              <div class="col-6">
+                <img src="./images/e-com4.webp" alt="" class="w-75 h-100" style="transform: translateX(40%);">
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- !description end -->
+
+        <div class="watch-divided-container container-fluid mt-5">
+          <div class="container watch-divided">
+            <div class="row">
+              <div class="col-4 divide-col1-row1">
+                <div class="row">
+                  <h5 class="text-secondary">01.</h5>
+                  <h2>Sapphire Crystal</h2>
+                  <p class="text-secondary" style="font-size: 18px;">Known for obtaining a remarkable hardness (nearly <br> as hard as a diamond). Has a high scratch resistance <br> which makes it a perfect material.</p>
+                </div>
+                <div class="row divide-col1-row2">
+                  <h5 class="text-secondary">02.</h5>
+                  <h2>Swiss Ronda Movement</h2>
+                  <p class="text-secondary" style="font-size: 17px;">Run by the vibration of a quartz crystal (32,786 times <br> per second) under current to keep accurate time.</p>
+                </div>
+              </div>
+              <div class="col-4 mt-5">
+                <img src="./images/e-com22.webp" style="transform: translateX(-5px);">
+              </div>
+              <div class="col-4 divide-col1-row1 divide-col2-row1">
+                <div class="row">
+                  <h5 class="text-secondary">03.</h5>
+                  <h2>316L Stainless Steel</h2>
+                  <p class="text-secondary" style="font-size: 18px;">The watch case is made of extra low carbon steel that is often used in surgical instruments and marine appliances thanks to its high.</p>
+                </div>
+                <div class="row divide-col1-row2">
+                  <h5 class="text-secondary">04.</h5>
+                  <h2>Italian Leather Straps</h2>
+                  <p class="text-secondary" style="font-size: 17px;">The band is made of high-grade Italian eco-leather with a soft nubuck lining for extra comfort. Obtains excellent wearing qualities.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- !devide end -->
+
+        <div class="best-seller-container container mt-5">
+          <h1 class="best-seller-header text-center text-uppercase">Best Seller</h1>
+          <p class="text-center fs-5 text-secondary">Porta non pulvinar neque laoreet suspendisse interdum consectetur libero. Massa tempor nec <br>
+            feugiat nisl. Accumsan lacus vel facilisis volutpat. Viverra justo nec.</p>
+
+            <div class="best-cards-container">
+              <div class="row">
+                <div class="col-2">
+                  <div class="featured-card">
+                    <div class="row featured-img-container" style="width: 20rem;">
+                      <a href="./inspect/inspect.html"><img src="./images/e-com13.webp" class="w-100 featured-img"></a>
+                    </div>
+                    <div class="row" style="width: 20rem;">
+                      <a href="./inspect/inspect.html"><h4 class="text-center">Vintage Quartz</h4></a>
+                      <p class="featured-new-price text-center fs-4">$203.00 <a role="link" aria-disabled="true" style="text-decoration: line-through; color: grey;">$262.00</a></p>
+                      <a href="./inspect/inspect.html"><button class="featured-button text-center mx-5">Select Options</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-2 offset-1">
+                  <div class="featured-card">
+                    <div class="row featured-img-container" style="width: 20rem;">
+                      <a href="./inspect/inspect3.html"><img src="./images/e-com14.webp" class="w-100 featured-img"></a>
+                    </div>
+                    <div class="row" style="width: 20rem;">
+                      <a href="./inspect/inspect3.html"><h4 class="text-center">Premium Gold</h4></a>
+                      <p class="featured-new-price text-center fs-4">$255.00 <a role="link" aria-disabled="true" style="text-decoration: line-through; color: grey;">$289.00</a></p>
+                      <a href="./inspect/inspect3.html"><button class="featured-button text-center mx-5">Select Options</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-2 offset-1">
+                  <div class="featured-card">
+                    <div class="row featured-img-container" style="width: 20rem;">
+                      <a href="./inspect/inspect.html"><img src="./images/e-com15.webp" class="w-100 featured-img"></a>
+                    </div>
+                    <div class="row" style="width: 20rem;">
+                      <a href="./inspect/inspect.html"><h4 class="text-center">Casual Rubber</h4></a>
+                      <p class="featured-new-price text-center fs-4">$186.00 <a role="link" aria-disabled="true" style="text-decoration: line-through; color: grey;">$203.00</a></p>
+                      <a href="./inspect/inspect.html"><button class="featured-button text-center mx-5">Select Options</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-2 offset-1">
+                  <div class="featured-card">
+                    <div class="row featured-img-container" style="width: 20rem;">
+                      <a href="./inspect/inspect.html"><img src="./images/e-com20.webp" class="w-100 featured-img"></a>
+                    </div>
+                    <div class="row" style="width: 20rem;">
+                      <a href="./inspect/inspect.html"><h4 class="text-center">Titanium Steel</h4></a>
+                      <p class="featured-new-price text-center fs-4">$240.00 <a role="link" aria-disabled="true" style="text-decoration: line-through; color: grey;">$260.00</a></p>
+                      <a href="./inspect/inspect.html"><button class="featured-button text-center mx-5">Select Options</button></a>
+                    </div>
+                  </div> 
+                </div>
+              </div>
+
+
+              <div class="row mt-4">
+                <div class="col-2">
+                  <div class="featured-card">
+                    <div class="row featured-img-container" style="width: 20rem;">
+                      <a href="./inspect/inspect2.html"><img src="./images/e-com17.webp" class="w-100 featured-img"></a>
+                    </div>
+                    <div class="row" style="width: 20rem;">
+                      <a href="./inspect/inspect2.html"><h4 class="text-center">Vintage Quartz</h4></a>
+                      <p class="featured-new-price text-center fs-4">$203.00 <a role="link" aria-disabled="true" style="text-decoration: line-through; color: grey;">$262.00</a></p>
+                      <a href="./inspect/inspect2.html"><button class="featured-button text-center mx-5">Select Options</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-2 offset-1">
+                  <div class="featured-card">
+                    <div class="row featured-img-container" style="width: 20rem;">
+                      <a href="./inspect/inspect2.html"><img src="./images/e-com18.webp" class="w-100 featured-img"></a>
+                    </div>
+                    <div class="row" style="width: 20rem;">
+                      <a href="./inspect/inspect2.html"><h4 class="text-center">Premium Gold</h4></a>
+                      <p class="featured-new-price text-center fs-4">$255.00 <a role="link" aria-disabled="true" style="text-decoration: line-through; color: grey;">$289.00</a></p>
+                      <a href="./inspect/inspect2.html"><button class="featured-button text-center mx-5">Select Options</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-2 offset-1">
+                  <div class="featured-card">
+                    <div class="row featured-img-container" style="width: 20rem;">
+                      <a href="./inspect/inspect2.html"><img src="./images/e-com19.webp" class="w-100 featured-img"></a>
+                    </div>
+                    <div class="row" style="width: 20rem;">
+                      <a href="./inspect/inspect2.html"><h4 class="text-center">Casual Rubber</h4></a>
+                      <p class="featured-new-price text-center fs-4">$186.00 <a role="link" aria-disabled="true" style="text-decoration: line-through; color: grey;">$203.00</a></p>
+                      <a href="./inspect/inspect2.html"><button class="featured-button text-center mx-5">Select Options</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-2 offset-1">
+                  <div class="featured-card">
+                    <div class="row featured-img-container" style="width: 20rem;">
+                      <a href="./inspect/inspect2.html"><img src="./images/e-com21.webp" class="w-100 featured-img"></a>
+                    </div>
+                    <div class="row" style="width: 20rem;">
+                      <a href="./inspect/inspect2.html"><h4 class="text-center">Titanium Steel</h4></a>
+                      <p class="featured-new-price text-center fs-4">$240.00 <a role="link" aria-disabled="true" style="text-decoration: line-through; color: grey;">$260.00</a></p>
+                      <a href="./inspect/inspect2.html"><button class="featured-button text-center mx-5">Select Options</button></a>
+                    </div>
+                  </div> 
+                </div>
+              </div>
+
+              <button class="featured-button text-center mt-5 text-center" style="margin-left: 43%;" >View All Products</button>
+
+            </div>
+        </div>
+
+        <!-- ! best seller end -->
+
+        <div class="modern-dials-container container-fluid">
+          <h1 class="best-seller-header text-center text-uppercase">Modren Dials</h1>
+          <p class="text-center text-secondary fs-5">Porta non pulvinar neque laoreet suspendisse interdum consectetur libero. Massa tempor nec <br>
+            feugiat nisl. Accumsan lacus vel facilisis volutpat. Viverra justo nec.</p>
+            <div class="container" style="margin-top: 5%;">
+              <div class="row">
+                <div class="col-1">
+                  <img src="./images/e-com23.avif" alt="">
+                </div>
+                <div class="col-1 offset-1">
+                  <img src="./images/e-com24.avif" alt="">
+                </div>
+                <div class="col-1 offset-1">
+                  <img src="./images/e-com25.avif" alt="">
+                </div>
+                <div class="col-1 offset-1">
+                  <img src="./images/e-com26.avif" alt="">
+                </div>
+                <div class="col-1 offset-1">
+                  <img src="./images/e-com23.avif" alt="">
+                </div>
+                <div class="col-1 offset-1">
+                  <img src="./images/e-com25.avif" alt="">
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <!-- ! modern dials end -->
+
+        <div class="questions-container container mt-5" style="height: 30rem;">
+          <div class="row pt-4">
+            <div class="col-6">
+              <img src="./images/e-com27.webp" alt="" class="questions-img w-100 h-100">
+            </div>
+            <div class="col-6">
+              <h1 class="questions-header text-uppercase">Everything You Need To Know About Watches</h1>
+
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h1 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      What happens if my order is damaged during shipping??
+                    </button>
+                  </h1>
+                  <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                     We apologize for any inconvenience caused by damaged orders. Please contact our customer support immediately with photos of the damage, and we will arrange a replacement or refund.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h1 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      How do I initiate a return or exchange?
+                    </button>
+                  </h1>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      We apologize for any inconvenience caused by damaged orders. Please contact our customer support immediately with photos of the damage, and we will arrange a replacement or refund.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h1 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      How do I care for my watch?
+                    </button>
+                  </h1>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      We apologize for any inconvenience caused by damaged orders. Please contact our customer support immediately with photos of the damage, and we will arrange a replacement or refund.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ! questions end -->
+
+        <div class="sponsor-container container mb-5">
+          <div class="sponsors">
+            <img src="./images/e-com28.webp" alt="">
+            <img src="./images/e-com29.webp" alt="">
+            <img src="./images/e-com30.webp" alt="">
+            <img src="./images/e-com31.webp" alt="">
+            <img src="./images/e-com32.webp" alt="">
+          </div>
+          <div class="sponsors">
+            <img src="./images/e-com28.webp" alt="">
+            <img src="./images/e-com29.webp" alt="">
+            <img src="./images/e-com30.webp" alt="">
+            <img src="./images/e-com31.webp" alt="">
+            <img src="./images/e-com32.webp" alt="">
+          </div>
+        </div>
+
+        <!-- ! sponsors end -->
+
+        <div class="testimonial-container container" style="margin-top: 5rem;">
+          <div class="row" style="height: 20rem;">
+            <div class="col-4" style="padding-top: 10%;">
+              <h1 class="testimonial-header text-uppercase">Testimonials</h1>
+              <p class="text-secondary">Just Read our customers opinion about our Product and Services. Which are help.</p>
+            </div>
+            <div class="col-4" style="transform: translateX(-30px);">
+              <div class="row">
+                <div class="col-3">
+                  <img src="./images/e-com13.webp" alt="" class="testimonial-img">
+                </div>
+                <div class="col-9">
+                 <div class="testimonial-stars-container row">
+                  <div class="testimonial-star1 testimonial-star">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                  </div>
+
+                  <div class="testimonial-star2 testimonial-star">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                  </div>
+
+                  <div class="testimonial-star3 testimonial-star">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                  </div>
+
+                  <div class="testimonial-star4 testimonial-star">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                  </div>
+
+                  <div class="testimonial-star5 testimonial-star">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                  </div>
+                </div>
+
+
+                <div class="row">
+                  <h5 class="testimonials-mini-header"> <strong>Brilliant Watch!</strong></h5>
+                  <p class="testimonials-mini-header text-secondary" style="font-size: 18px;">As a watch aficionado, the watch theme is an absolute delight. It offers a comprehensive exploration of the world of horology...</p> 
+                  <p class="testimonials-mini-header text-secondary"><br><a class="fw-bold text-secondary" role="link" aria-disabled="true" style="cursor: text;">Olivia Wilson</a> <br> Customer</p>
+                </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="row">
+                <div class="col-3">
+                  <img src="./images/e-com17.webp" alt="" class="testimonial-img">
+                </div>
+                <div class="col-9">
+                 <div class="testimonial-stars-container row">
+                  <div class="testimonial-star1 testimonial-star">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                  </div>
+
+                  <div class="testimonial-star2 testimonial-star">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                  </div>
+
+                  <div class="testimonial-star3 testimonial-star">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                  </div>
+
+                  <div class="testimonial-star4 testimonial-star">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                  </div>
+
+                  <div class="testimonial-star5 testimonial-star">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                      <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                    </svg>
+                  </div>
+                </div>
+
+
+                <div class="row">
+                  <h5 class="testimonials-mini-header"> <strong>Outstanding!</strong></h5>
+                  <p class="testimonials-mini-header text-secondary" style="font-size: 18px;">As a watch aficionado, the watch theme is an absolute delight. It offers a comprehensive exploration of the world of horology...</p> 
+                  <p class="testimonials-mini-header text-secondary"><br><a class="fw-bold text-secondary" role="link" aria-disabled="true" style="cursor: text;">Jason K. Manato</a> <br> Customer</p>
+                </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ! testimonial end -->
+
+        <div class="container pt-5">
+          <div class="row pt-5">
+            <h1 class="text-center text-uppercase pt-5" style="font-family: var(--font-family); font-weight: 600;">latest articles</h1>
+            <p class="text-center text-secondary">Porta non pulvinar neque laoreet suspendisse interdum consectetur libero. Massa tempor nec <br> feugiat nisl. Accumsan lacus vel facilisis volutpat. Viverra justo nec.</p>
+          </div>
+           <div class="row">
+            <div class="col-4 mt-5">
+              <div class="featured-card" style="transform: translateX(0px);">
+                <div class="row blog-img-container" style="max-width: 28rem;">
+                  <a href="./blog-detail/blog-detail.html"><img src="../images/e-com44.webp" class="w-100 blog-img"></a>
+                </div>
+                <div class="row" style="width: 28rem;">
+                  <p class="text-secondary pt-2" style="font-family: var(--font-family);">Feb 22 , 2025 * by Ui Paradox</p>
+                  <a href="./blog-detail/blog-detail.html"><h5 class="">Kids' Watches - Fun, Colorful, and Easy-to-Use</h5></a>
+                  <p class="featured-new-price pt-2">Introduction Lorem ipsum maintenance is a fundamental aspect of vehicle care that...</p>
+                  <a href="./blog-detail/blog-detail.html" style="text-decoration: underline;">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 mt-5">
+              <div class="featured-card" style="transform: translateX(0px);">
+                <div class="row blog-img-container" style="max-width: 28rem;">
+                  <a href="./blog-detail/blog-detail.html"><img src="../images/e-com45.webp" class="w-100 blog-img"></a>
+                </div>
+                <div class="row" style="width: 28rem;">
+                  <p class="text-secondary pt-2" style="font-family: var(--font-family);">Feb 22 , 2025 * by Ui Paradox</p>
+                  <a href="./blog-detail/blog-detail.html"><h5 class="">Sports Watches – Built for Performance and Adventure</h5></a>
+                  <p class="featured-new-price pt-2">Introduction Lorem ipsum maintenance is a fundamental aspect of vehicle care that...</p>
+                  <a href="./blog-detail/blog-detail.html" style="text-decoration: underline;">Read More</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 mt-5">
+              <div class="featured-card" style="transform: translateX(0px);">
+                <div class="row blog-img-container" style="max-width: 28rem;">
+                  <a href="./blog-detail/blog-detail.html"><img src="../images/e-com46.webp" class="w-100 blog-img"></a>
+                </div>
+                <div class="row" style="width: 28rem;">
+                  <p class="text-secondary pt-2" style="font-family: var(--font-family);">Feb 22 , 2025 * by Ui Paradox</p>
+                  <a href="./blog-detail/blog-detail.html"><h5 class="">Digital Watches – Modern Technology Meets Style</h5></a>
+                  <p class="featured-new-price pt-2">Introduction Lorem ipsum maintenance is a fundamental aspect of vehicle care that...</p>
+                  <a href="./blog-detail/blog-detail.html" style="text-decoration: underline;">Read More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+
+
+
+
+        <!-- footer start -->
+
+        <div class="footer-container container-fluid">
+          <div class="container">
+            <div class="row">
+              <div class="col-4">
+                <div class="row">
+                  <img src="./images/e-com33.webp" alt="" class="w-50">
+                </div>
+                <p class="text-secondary fs-5" style=" margin-top: 2%;">Lorem ipsum dolor sit amet consectetur. Amet ut viverra morbi in venenatis augue turpis. Quisque at leo amet urna volutpat ac.</p> <br>
+
+                <p class="text-secondary" style="font-size: 18px;">Email: <a class="text-dark" role="link" aria-disabled="true" >exampleinfo@gmail.com</a></p>
+                <p class="text-secondary" style="font-size: 18px; margin-top: -3%;">Phone: <a class="text-dark" role="link" aria-disabled="true" >+222-1800-2628</a></p>
+                <p class="text-secondary" style="font-size: 18px; margin-top: -3%;">Address: <a class="text-dark" role="link" aria-disabled="true" >502 New Design Str, Melbourne</a></p> <br>
+
+                <p class="text-secondary" style="text-wrap: nowrap;">Copyright © <strong class="text-dark">TIMEHOUSE.</strong> All Rights Reserved. Powered by <strong class="text-dark">UIPARADOX.</strong></p>
+                
+              </div>
+              <div class="col-2 ms-1">
+                <h3>Company</h3>
+                <a class="text-secondary fs-5" href="./index.html">Home</a> <br>
+                <a class="text-secondary fs-5" href="./about/about.html">About Us</a> <br>
+                <a class="text-secondary fs-5" href="./products/shop.html">Our Store</a> <br>
+                <a class="text-secondary fs-5" href="./contact/contact.html">Contact Us</a> <br>
+                <a class="text-secondary fs-5" href="#">My Account</a>
+              </div>
+              <div class="col-2 ms-1">
+                <h3>Resources</h3>
+                <a class="text-secondary fs-5" href="./products/shop.html">Shop</a> <br>
+                <a class="text-secondary fs-5" href="./collection/collection.html">Collections</a> <br>
+                <a class="text-secondary fs-5" href="./blog-listing/blog-list.html">Blogs</a> <br>
+                <a class="text-secondary fs-5" href="#">Theme FAQs</a> <br>
+                <a class="text-secondary fs-5" href="#">Privacy Policy</a>
+              </div>
+              <div class="col-3">
+                <h3>Sign Up To Newsletter</h3>
+                <p class="text-secondary fs-5">Sign up for exclusive updates, new arrivals & insider only discounts</p>
+                <div class="mb-3">
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Email Adress...">
+                  <button class="footer-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                    <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+                  </svg></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+
+
+
+
+
+
+
+
+
+    <script src="./scripts/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

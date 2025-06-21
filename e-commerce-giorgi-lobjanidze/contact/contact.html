@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Time House</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/config.css">
+    <link rel="stylesheet" href="../styles/style.css">
+  </head>
+  <body>
+    <div class="container-fluid top-bar w-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="row">
+                        <p class="text-light top-bar-help mt-2 fw-bold">Need Help?</p>
+                    </div>
+                    <div class="row">
+                        <p class="text-light top-bar-number">+001 123 456 789</p>
+                    </div>
+                </div>
+                <div class="col-4 top-bar-logo"><a href="#"><img src="../images/e-com1.webp" alt="" class="w-100 h-100"></a></div>
+                <div class="col-4">
+                    <div class="row">
+                        <a href="../cart/cart.html" style="width: 35px; height: 30px; margin-top: 33px; transform: translateX(210px);z-index: 100;"><div class="col-3 top-bar-cart-container"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                          </svg><span class="cart-item-count text-center" style="left: 6px;"></span></div></a>
+                        <div class="col-9">
+                            <div class="row top-bar-language">
+                                <div class="col-3"><img src="../images/e-com2.webp" alt="" class="top-bar-flag w-75 h-75"></div>
+                                <div class="col-9"><p class="text-light fs-5">English</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ! top bar end -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active fs-5" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fs-5" aria-current="page" href="../about/about.html">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Product
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../products/shop.html">Shop</a></li>
+                  <li><a class="dropdown-item" href="./collection.html">Collection</a></li>
+                  <li><a class="dropdown-item" href="../inspect/inspect.html">Product Detail</a></li>
+                  <li><a class="dropdown-item" href="../cart/cart.html">Cart</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle fs-5" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Blog
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="../blog-listing/blog-list.html">Blog Listing</a></li>
+                  <li><a class="dropdown-item" href="../blog-detail/blog-detail.html">Blog Detail</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fs-5" aria-current="page" href="./contact.html">Contact Us</a>
+              </li>
+
+            </ul>
+            <a class="nav-cart-icon dissapear" href="../cart/cart.html" style="width: 30px; height: 30px;transform: translateX(-10px); z-index: 100;"><div class="col-3 top-bar-cart-container"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16" style=" color: black; transform: translateX(13px);">
+            <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+            </svg><span class="cart-item-count text-center"></span></div></a>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search for products..." aria-label="Search">
+              <button class="btn btn-outline-dark" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+              </svg></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- ! nav end -->
+
+      <div class="about-us-banner container-fluid mt-5">
+        <div class="container">
+            <h1 class="about-banner-header text-uppercase text-light">Contact</h1>
+        </div>
+      </div>
+    <!-- ! about banner end -->
+
+    <div class="container" style="margin-top: 5rem;">
+        <div class="row">
+            <div class="col-6">
+                <h1 class="" style="font-family: var(--font-family); font-weight: 600;">Get in Touch</h1>
+                <div class="row">
+                    <div class="col-6">
+                        <input class="form-control w-100" type="text" placeholder="Your Name" aria-label="default input example" style="border: 1px solid black;">
+                    </div>
+                    <div class="col-6">
+                        <input type="email" class="form-control w-100" id="exampleFormControlInput1" placeholder="Email Adress" style="border: 1px solid black;">
+                    </div>
+                </div>
+                <div class="row">
+                    <input class="form-control mt-4" type="number" placeholder="Phone Number" aria-label="default input example" style="border: 1px solid black; width: 96%; margin-left: 2%;">
+                </div>
+                <textarea class="form-control mt-4" id="exampleFormControlTextarea1" rows="3" style="height: 150px; width: 100%; border: 1px solid black;" placeholder="Write Your Message"></textarea>
+                <button class="featured-button text-center mt-4">Send Message</button>
+            </div>
+            <div class="col-6">
+                <img src="../images/e-com46.webp" alt="" class="w-100 h-100 mt-2">
+            </div>
+        </div>
+    </div>
+
+    <div class="container contact-hours-container">
+        <div class="row">
+            <div class="col-6">
+                <h2 class="ms-4 mt-5" style="font-family: var(--font-family); font-weight: 600;">Central Office</h2>
+                <p class="ms-4 text-secondary">Your email address is safe with us. Required fields are noted with *</p>
+                <p class="ms-4 text-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone text-dark" viewBox="0 0 16 16">
+  <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+</svg> +1 212-555-6789</p>
+                <p class="ms-4 text-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt text-dark" viewBox="0 0 16 16">
+  <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+</svg> 456 Fifth Avenue, New York City, USA</p>
+                <p class="ms-4 text-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope text-dark" viewBox="0 0 16 16">
+  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+</svg> exampleinfo@gmail.com</p>
+
+                <p class="fs-5 ms-4 mt-3" style="font-family: var(--font-family); font-weight: 500;">Follow Us</p>
+                <div class="row">
+                    <div class="ms-4"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+</svg></div>
+                    <div class="ms-4"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16" style="transform: translate(30px, -24px);">
+  <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+</svg></div>
+                    <div class="ms-4"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16" style="transform: translate(60px, -48px);">
+  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+</svg></div>
+                   <div class="ms-4"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-tiktok" viewBox="0 0 16 16" style="transform: translate(90px, -72px);">
+  <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+</svg></div>
+                </div>
+
+
+            </div>
+            <div class="col-6">
+                <h2 class="ms-4 mt-5" style="font-family: var(--font-family); font-weight: 600;">Opening Hours</h2>
+                <p class="ms-4 text-secondary">Open Mon-Fri 10 AM-9 PM, Sat 10-6 PM, Closed on Sundays.</p>
+                <p class="ms-4">Monday: <a role="link" aria-disabled="true" style="color: grey;">--------------------------------------------------------</a> 10:00 AM - 9:00 PM</p>
+                 <p class="ms-4">Tuesday: <a role="link" aria-disabled="true" style="color: grey;">--------------------------------------------------------</a> 10:00 AM - 9:00 PM</p>
+                 <p class="ms-4">Wednesday: <a role="link" aria-disabled="true" style="color: grey;">----------------------------------------------------</a> 10:00 AM - 9:00 PM</p>
+                 <p class="ms-4">Thursday: <a role="link" aria-disabled="true" style="color: grey;">-------------------------------------------------------</a> 10:00 AM - 9:00 PM</p>
+                 <p class="ms-4">Friday: <a role="link" aria-disabled="true" style="color: grey;">----------------------------------------------------------</a> 10:00 AM - 9:00 PM</p>
+                 <p class="ms-4">Saturday: <a role="link" aria-disabled="true" style="color: grey;">-------------------------------------------------------</a> 10:00 AM - 9:00 PM</p>
+                 <p class="ms-4">Sunday: <a role="link" aria-disabled="true" style="color: grey;">-----------------------------------------------------------------------</a> Closed</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container" style="margin-top: 5rem;">
+        <h1 class="text-center text-uppercase" style="font-family: var(--font-family); font-weight: 600; font-size: 50px;">Global Store Locations</h1>
+        <p class="text-center text-secondary mb-5 pb-5" style="font-size: 18px;">Explore a curated selection of beers from renowned breweries around <br> the world, delivering global flavors to your doorstep.</p>
+
+        <div class="row contact-card-space"></div>
+
+        <!-- <div class="col-3">
+            <div class="store-card">
+            <div class="row">
+                <img src="../images/e-com53.avif" alt="" style="width: 341px; height: 220px;">
+            </div>
+            <div class="row">
+                <h4 class="pt-3" style="font-family: var(--font-family);">Paris, France</h4>
+                <p class="text-secondary" style="font-size: 17px; margin-top: -10px;">45 Rue de Rivoli, 75001 Paris</p>
+                <p class="fs-4" style="font-weight: 600;"><svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-telephone me-2" viewBox="0 0 16 16" style="margin-top: -5px;">
+                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                    </svg> +33 1 42 65 00 55</p>
+            </div>
+        </div>
+        </div> -->
+    </div>
+
+        
+
+
+
+
+
+        
+
+      
+
+
+     
+
+
+<!-- ! footer start -->
+
+        <div class="footer-container container-fluid" style="margin-top:50px;">
+          <div class="container">
+            <div class="row">
+              <div class="col-4">
+                <div class="row">
+                  <img src="../images/e-com33.webp" alt="" class="w-50">
+                </div>
+                <p class="text-secondary fs-5" style=" margin-top: 2%;">Lorem ipsum dolor sit amet consectetur. Amet ut viverra morbi in venenatis augue turpis. Quisque at leo amet urna volutpat ac.</p> <br>
+
+                <p class="text-secondary" style="font-size: 18px;">Email: <a class="text-dark" role="link" aria-disabled="true" >exampleinfo@gmail.com</a></p>
+                <p class="text-secondary" style="font-size: 18px; margin-top: -3%;">Phone: <a class="text-dark" role="link" aria-disabled="true" >+222-1800-2628</a></p>
+                <p class="text-secondary" style="font-size: 18px; margin-top: -3%;">Address: <a class="text-dark" role="link" aria-disabled="true" >502 New Design Str, Melbourne</a></p> <br>
+
+                <p class="text-secondary" style="text-wrap: nowrap;">Copyright © <strong class="text-dark">TIMEHOUSE.</strong> All Rights Reserved. Powered by <strong class="text-dark">UIPARADOX.</strong></p>
+                
+              </div>
+              <div class="col-2 ms-1">
+                <h3>Company</h3>
+                <a class="text-secondary fs-5" href="../index.html">Home</a> <br>
+                <a class="text-secondary fs-5" href="../about/about.html">About Us</a> <br>
+                <a class="text-secondary fs-5" href="../products/shop.html">Our Store</a> <br>
+                <a class="text-secondary fs-5" href="./contact.html">Contact Us</a> <br>
+                <a class="text-secondary fs-5" href="#">My Account</a>
+              </div>
+              <div class="col-2 ms-1">
+                <h3>Resources</h3>
+                <a class="text-secondary fs-5" href="../products/shop.html">Shop</a> <br>
+                <a class="text-secondary fs-5" href="../collection/collection.html">Collections</a> <br>
+                <a class="text-secondary fs-5" href="../blog-listing/blog-list.html">Blogs</a> <br>
+                <a class="text-secondary fs-5" href="#">Theme FAQs</a> <br>
+                <a class="text-secondary fs-5" href="#">Privacy Policy</a>
+              </div>
+              <div class="col-3">
+                <h3>Sign Up To Newsletter</h3>
+                <p class="text-secondary fs-5">Sign up for exclusive updates, new arrivals & insider only discounts</p>
+                <div class="mb-3">
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Email Adress...">
+                  <button class="footer-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+                    <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+                  </svg></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ! footer end -->
+      
+
+
+
+
+
+
+
+
+
+    <script src="../scripts/app.js"></script>
+    <script src="../scripts/contact.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
